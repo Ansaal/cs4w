@@ -36,6 +36,8 @@ jobs:
         # Upload entire repository
         path: './dist'
     - name: Deploy to GitHub Pages
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
       id: deployment
       uses: actions/deploy-pages@v2
 

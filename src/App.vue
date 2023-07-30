@@ -77,10 +77,3 @@ import Bild1 from '@/assets/Bild1.jpg'
 const drawer = ref(false)
 let {mdAndDown, lgAndUp, md, smAndDown} = useDisplay();
 </script>
-<style>
-.v-list-item--active {
-  color: black;
-!important;
-}
-
-</style>

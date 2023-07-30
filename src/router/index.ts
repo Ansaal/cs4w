@@ -1,5 +1,5 @@
 // Composables
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 import Home from "@/pages/Home.vue";
 import AboutMe from "@/pages/AboutMe.vue";
 import Services from "@/pages/Services.vue";
@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     component: Home,
-   },
+  },
   {
     path: '/aboutme',
     component: AboutMe,
@@ -25,7 +25,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 })
 

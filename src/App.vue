@@ -2,13 +2,13 @@
   <v-app id="inspire">
     <v-navigation-drawer v-if="mdAndDown" class="bg-background" v-model="drawer">
       <v-list color="background">
-        <v-list-item href="/#/aboutme" prepend-icon="mdi-account" title="About me">
+        <v-list-item href="#/aboutme" prepend-icon="mdi-account" title="About me">
         </v-list-item>
         <v-divider></v-divider>
-        <v-list-item href="/#/services" prepend-icon="mdi-book-open-variant" title="Services">
+        <v-list-item href="#/services" prepend-icon="mdi-book-open-variant" title="Services">
         </v-list-item>
         <v-divider/>
-        <v-list-item href="/#/contact" prepend-icon="mdi-phone" title="Contact">
+        <v-list-item href="#/contact" prepend-icon="mdi-phone" title="Contact">
         </v-list-item>
       </v-list>
 
@@ -18,9 +18,9 @@
       <v-toolbar-title><a href="/" style="color: black;text-decoration: none"> Counselling Solutions for Women </a>
       </v-toolbar-title>
 
-      <v-btn href="/#/aboutme" variant="tonal" style="margin-right: 12px" v-if="lgAndUp"> About me</v-btn>
-      <v-btn href="/#/services" variant="tonal" style="margin-right: 12px" v-if="lgAndUp"> Services</v-btn>
-      <v-btn href="/#/contact" variant="tonal" v-if="lgAndUp"> Contact</v-btn>
+      <v-btn href="#/aboutme" variant="tonal" style="margin-right: 12px" v-if="lgAndUp"> About me</v-btn>
+      <v-btn href="#/services" variant="tonal" style="margin-right: 12px" v-if="lgAndUp"> Services</v-btn>
+      <v-btn href="#/contact" variant="tonal" v-if="lgAndUp"> Contact</v-btn>
 
     </v-app-bar>
     <v-main>

@@ -2,7 +2,7 @@
   <v-container>
     <v-row style="margin-left: 0px ; margin-top:10px"><h1>About Me:</h1></v-row>
     <v-row>
-      <v-col sm="12" order-sm="last" order-md="first">
+      <v-col sm="12" md="6" order-sm="last" order-md="first">
         <v-img :src="BildAnnekatrin"></v-img>
       </v-col>
       <v-col>

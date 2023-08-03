@@ -9,6 +9,15 @@ import {fileURLToPath, URL} from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.NODE_ENV === "production" ? '/cs4w/' : '/',
+  css: {
+    preprocessorOptions: {
+      less: {
+        math: "always",
+        relativeUrls: true,
+        javascriptEnabled: true
+      },
+    },
+  },
   plugins: [
     vue({
       template: {transformAssetUrls}
@@ -39,4 +48,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+
 })
